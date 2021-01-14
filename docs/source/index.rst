@@ -68,43 +68,6 @@ let's create a wavlength scan in the visible range from 400nm to 700nm:
    
 
 
-***********
-First GDSII
-***********
-
-Let's create our first GDSII file:
-
-.. code-block:: python
-
-   import gdspy
-
-   # The GDSII file is called a library, which contains multiple cells.
-   lib = gdspy.GdsLibrary()
-
-   # Geometry must be placed in cells.
-   cell = lib.new_cell('FIRST')
-
-   # Create the geometry (a single rectangle) and add it to the cell.
-   rect = gdspy.Rectangle((0, 0), (2, 1))
-   cell.add(rect)
-
-   # Save the library in a file called 'first.gds'.
-   lib.write_gds('first.gds')
-
-   # Optionally, save an image of the cell as SVG.
-   cell.write_svg('first.svg')
-
-   # Display all cells using the internal viewer.
-   gdspy.LayoutViewer()
-
-
-After importing the `gdspy` module, we create a library `lib` to hold the design.
-Then a :class:`gdspy.Cell` is created and the rectangle is added to the cell.
-All shapes in the GDSII format exist inside cells.
-A cell can be imagined as a piece of paper where the layout will be defined.
-Later, the cells can be used to create a hierarchy of geometries, ass we'll see in :ref:`References`.
-
-
 
 .. toctree::
    :maxdepth: 3
