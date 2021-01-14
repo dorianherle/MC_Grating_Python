@@ -67,7 +67,7 @@ let's create a wavlength scan in the visible range from 400nm to 700nm:
    scan.setting_wavelength_scan(start_w=400, end_w=700, number_of_points=100)
    
 
-Finnaly, let's retrieve and visualize the result
+Finnaly, let's run the simulation and visualize the result
 
 .. code-block:: python
 
