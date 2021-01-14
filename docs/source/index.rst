@@ -67,7 +67,21 @@ let's create a wavlength scan in the visible range from 400nm to 700nm:
    scan.setting_wavelength_scan(start_w=400, end_w=700, number_of_points=100)
    
 
+Finnaly, let's retrieve and visualize the result
 
+.. code-block:: python
+
+   # run 
+   run = mc.run_simulation()
+   data = run.open_output(scan = "wavelength_range")
+
+   # Visualize
+   w = data[0]["WaveL"]
+   r = data[0]["C[0,0].Pow"]
+   plt.plot(w,r*100)
+   plt.title("Reflection Spectra C[0,0].Pow")
+   plt.xlabel("Wavelength (nm)")
+   plt.ylabel("Reflection %")
 
 .. toctree::
    :maxdepth: 3
