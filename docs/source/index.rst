@@ -83,6 +83,11 @@ Finnaly, let's retrieve and visualize the result
    plt.xlabel("Wavelength (nm)")
    plt.ylabel("Reflection %")
 
+
+.. image:: _static/reflection_spectra_nanostructure.*
+   :align: center
+   
+   
 .. toctree::
    :maxdepth: 3
    
