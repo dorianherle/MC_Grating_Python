@@ -193,13 +193,13 @@
 <span class="n">geo</span><span class="o">.</span><span class="n">substrate</span><span class="p">(</span><span class="s2">&quot;Fused Silica (Sellmeier)&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>let’s create a wavlength scan in the visible range from 400nm to 700nm:</p>
+<p>let’s create a wavelength scan in the visible range from 400nm to 700nm:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># scan</span>
 <span class="n">scan</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">scanning</span><span class="p">()</span>
 <span class="n">scan</span><span class="o">.</span><span class="n">setting_wavelength_scan</span><span class="p">(</span><span class="n">start_w</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">end_w</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">number_of_points</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Finnaly, let’s retrieve and visualize the result</p>
+<p>Finnaly, let’s run the simulation and visualize the result</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># run</span>
 <span class="n">run</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">run_simulation</span><span class="p">()</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">run</span><span class="o">.</span><span class="n">open_output</span><span class="p">(</span><span class="n">scan</span> <span class="o">=</span> <span class="s2">&quot;wavelength_range&quot;</span><span class="p">)</span>
@@ -213,13 +213,11 @@
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Reflection %&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<img alt="_images/reflection_spectra_nanostructure.jpg" class="align-center" src="_images/reflection_spectra_nanostructure.jpg" />
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="licence.html">License</a></li>
-<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="help.html#need-further-help">Need further help</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
 </ul>
 </div>
 </div>

@@ -58,7 +58,7 @@ Create the geometry (and define materials used):
    # Substrate
    geo.substrate("Fused Silica (Sellmeier)")
 
-let's create a wavlength scan in the visible range from 400nm to 700nm:
+let's create a wavelength scan in the visible range from 400nm to 700nm:
 
 .. code-block:: python
 

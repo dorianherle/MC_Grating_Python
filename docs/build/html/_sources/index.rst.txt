@@ -58,7 +58,7 @@ Create the geometry (and define materials used):
    # Substrate
    geo.substrate("Fused Silica (Sellmeier)")
 
-let's create a wavlength scan in the visible range from 400nm to 700nm:
+let's create a wavelength scan in the visible range from 400nm to 700nm:
 
 .. code-block:: python
 
@@ -67,7 +67,7 @@ let's create a wavlength scan in the visible range from 400nm to 700nm:
    scan.setting_wavelength_scan(start_w=400, end_w=700, number_of_points=100)
    
 
-Finnaly, let's retrieve and visualize the result
+Finnaly, let's run the simulation and visualize the result
 
 .. code-block:: python
 
@@ -83,6 +83,11 @@ Finnaly, let's retrieve and visualize the result
    plt.xlabel("Wavelength (nm)")
    plt.ylabel("Reflection %")
 
+
+.. image:: _static/reflection_spectra_nanostructure.*
+   :align: center
+   
+   
 .. toctree::
    :maxdepth: 3
    
