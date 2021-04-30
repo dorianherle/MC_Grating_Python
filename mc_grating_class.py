@@ -1,19 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-@author: Dorian Herle
+Created on Fri Nov  8 10:31:47 2019
+
+@author: Dorian
 """
 
-import os
 import subprocess
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import colour
-colour.utilities.filter_warnings(True, False)
-from matplotlib.patches import Rectangle
-import re
-import time
-from os import path
+import json 
 
 
 class general():
@@ -81,6 +76,7 @@ class geometry(general):
         Saving to a temproary text file
         """
         geometry.mc_grating_geometry += text 
+
         
         
     def cover_material(self, material):
@@ -99,8 +95,9 @@ class geometry(general):
             document = self.mc_grating_geometry.replace('NUMBER_OF_PILLARS',str(self.counting_pillars))
 
             # Delete old temp file and create new one
-            self.mc_grating_geometry = document
+            geometry.mc_grating_geometry = document
             
+
         # Reset Counting Pillars
         self.counting_pillars = 0
         
@@ -144,7 +141,90 @@ class geometry(general):
         
         self.save_to_temp(circle)
       
+    def rectangle(self, center, w_x, w_y, material):
+        if self.counting_layers:     # don't count unless a layer was defined
+            self.counting_pillars += 1
+              
+        number_points = 4
+        cX,cY = center
+            
+        # MC Grating Repeats Geometries where a point is negative
+        # Therefore the centers have to be displaced to the middle of a unit cetl
+        cX = cX+self.period_X/2
+        cY = cY+self.period_Y/2
+        # TODO Fix
+        #print("Attention Center at bottom: rectangle class mc grating")
+        # Getting the points of the rectangle 
+        x11 = (cX-w_x/2)/self.period_X
+        y12 = (cY-w_y/2)/self.period_Y
+        x21 = (cX+w_x/2)/self.period_X
+        y22 = (cY+w_y/2)/self.period_Y
+        
+        points = [[x11,y12],[x21,y12],[x21,y22],[x11,y22]]
+        
+        rectangle = \
+        '1' +   '\t' + '0' + '\t' + str(number_points) + '\t' + 'Eps.Re; Eps.Im; Npoints of Pillar[' + str(self.counting_pillars) + ']; Material:' + ' ' + material + "\n" \
+        
+        for i,point in enumerate(points):
+            i += 1
+            rectangle = rectangle + \
+            str(point[0]) + "\t\t" + str(point[1]) + "\t\t" + "x[" + str(i) + "]/(X-Period); y[" + str(i) + "]/(Y-Period)" + "\n" 
 
+        
+        self.save_to_temp(rectangle)
+        
+    def polygon(self, xy_data, material):
+        if self.counting_layers:     # don't count unless a layer was defined
+            self.counting_pillars += 1
+            
+        number_points = xy_data.shape[0]
+        # MC Grating Repeats Geometries where a point is negative
+        # Therefore the centers have to be displaced to the middle of a unit cet
+        # Assumption: STL File is centered a zero
+        # Correction
+        centroid = xy_data.mean(axis=0)
+        points_centered = np.add(xy_data,[self.period_X/2-centroid[0], self.period_Y/2-centroid[1]])
+        # Scale the points to the MC Grating Length
+        points = np.divide(points_centered,[self.period_X, self.period_Y])
+        
+        ### ------------------------------------------------------------------
+        ### SORT COUNTERCLOCKWISE
+        ## SOURCE: https://stackoverflow.com/questions/58377015/counterclockwise-sorting-of-x-y-data
+        x,y = points.T
+        
+        dist2 = lambda a,b: (a[0]-b[0])*(a[0]-b[0]) + (a[1]-b[1])*(a[1]-b[1])
+
+        z = list(zip(x, y)) # get the list of coordinate pairs
+        z.sort() # sort by x coordinate
+        
+        cw = z[0:1] # first point in clockwise direction
+        ccw = z[1:2] # first point in counter clockwise direction
+        # reverse the above assignment depending on how first 2 points relate
+        if z[1][1] > z[0][1]: 
+            cw = z[1:2]
+            ccw = z[0:1]
+        
+        for p in z[2:]:
+            # append to the list to which the next point is closest
+            if dist2(cw[-1], p) < dist2(ccw[-1], p):
+                cw.append(p)
+            else:
+                ccw.append(p)
+        
+        cw.reverse()
+        points_counter_clockwise = cw + ccw
+        ### ------------------------------------------------------------------
+        
+        polygon = \
+        '1' +   '\t' + '0' + '\t' + str(number_points) + '\t' + 'Eps.Re; Eps.Im; Npoints of Pillar[' + str(self.counting_pillars) + ']; Material:' + ' ' + material + "\n" \
+        
+        for i,point in enumerate(points_counter_clockwise):
+            i += 1
+            polygon = polygon + \
+            str(point[0]) + "\t" + str(point[1]) + "\t" + "x[" + str(i) + "]/(X-Period); y[" + str(i) + "]/(Y-Period)" + "\n" 
+    
+        
+        self.save_to_temp(polygon)
     
         
     
@@ -163,6 +243,7 @@ class geometry(general):
         
         ## COMBINR HEADER AND GEOMETRY 
         self.finish_mc_grating_geom_script()
+       
         
         
     def finish_mc_grating_geom_script(self):
@@ -175,7 +256,7 @@ class geometry(general):
 
 class scanning(geometry):
     
-    def __init__(self):
+    def __init__(self, geo=""):
         
         # Initialize scanning
         scanning.document = ""
@@ -185,7 +266,10 @@ class scanning(geometry):
         # 1 single wavlength scan
         
         # Get Geometry document
-        self.geo = geometry.mc_grating_geometry
+        if geo=="":
+            self.geo = geometry.mc_grating_geometry
+        else:
+            self.geo = geo
         
         # get numbers of layers
         number_of_layers = int(self.geo.split("Number of Layers")[0].strip().split("\n")[-1])
@@ -306,7 +390,14 @@ false               Output Polarizer
     
         scanning.document= self.geo + self.settings
         
-    def export_doument(self):
+    def export_doument(self, path=""):
+        if path != "":
+            document = scanning.document
+            with open(path+ ".mdl", 'w') as new_file: 
+                new_file.write(document)
+            new_file.close()
+        
+        
         return scanning.document
 
 
@@ -327,14 +418,12 @@ class run_simulation(scanning):
     def launch_simulation(self):
         # Check if mc_grating_script_path was provided
         # else create file 
-        if self.from_file:
-            pass
-        else:
+        if not self.from_file:
             self.create_script()
         
 
         # Run the file as command line input
-        subprocess.run(['C:\Program Files\MC Grating Software\Full\ModalCrossed.exe', self.path_name+'.mdl',  self.path_name+'_output.dat'])
+        subprocess.run(['C:\Program Files\MC Grating Software\Full\ModalCrossed.exe', self.path_name+'.mdl',  self.path_name+'_output.json'])
         
         
      
@@ -352,155 +441,237 @@ class run_simulation(scanning):
         
         return self.path_name+ ".mdl"
         
-    # def read_script(self):
-        
-    #     with open(self.path_name+ ".mdl", 'r') as file: 
-    #         mc_grating_script = file.read()
-    #     file.close()
-        
-    #     self.orders_x = int(mc_grating_script.split("Number of Modes X")[0].strip())
-    #     self.orders_y = int(mc_grating_script.split("Number of Modes X\n")[1].split("Number of Modes Y")[0].strip()) 
-    #     self.period_X = float(mc_grating_script.split("\n")[2].split("X-Period")[0].strip())
-    #     self.period_Y = float(mc_grating_script.split("\n")[3].split("Y-Period")[0].strip())
-        
-  
 
-
-    def open_output(self, scan = "wavelength_range"):
+    def open_output(self):
         
         # Get MC Grating Result
-        f = open(self.path_name+'_output'+'.dat', "r")
-        output = f.read()
-        
-        f.close()
+        with open(self.path_name+'_output'+'.json') as json_file:
+            output = json.load(json_file)
         
     
-        # Delete MC Grating .dat file
-        #os.remove(output_name+'.dat')
+        dict_keys = np.array(list(output.keys()))
         
+        if output["ScanType"] == 1: # 1 Parameter scan
+            # get initial value
+            iniValue = output["ScanPar"]["IniValue"]
+            # get index where iniutal value starts in dict keys
+            indx = np.where(dict_keys== str(iniValue))
+            values = dict_keys[indx[0][0]: ]
+            
+            data = {}
+            for value in values:
+                data[value] = output[value]
+            return data
         
-        if scan == "wavelength_range":
             
-            with open(self.path_name+'_output.dat', "rb") as f:  # binary mode
-                columns = [element.decode("latin-1") for element in next(f).strip().split()]
-                df = pd.DataFrame((
-                    [float(e.decode("latin-1")) if e != b'\xa0' else 0 for e in l.strip().split()] for l in f), columns=columns)
-                f.close()
-            # Find Index to break dataframe into data and notifications
-            none_indexes = [i for i,val in enumerate(df["WaveL"]) if val!=val]
-            try:
-                break_index = none_indexes[0]
-                break_index_2 = none_indexes[1]
-            except:
-                break_index = len(df["WaveL"])-1
-                break_index_2 = len(df["WaveL"])
-            
-            # Data
-            data = df[:break_index]
-            # Notification
-            corrected_order_X = self.period_X
-            corrected_order_Y = self.period_Y
-            
-            if break_index+1 != break_index_2:
-                notification = df[break_index+1:]
-                notification_string = notification.to_string()
-                notification_sentence =  " ".join(notification_string.split())
-                corrected_order_X = notification_sentence.split("Number of Orders was Corrected!")[1].split("X Orders =")[1].split()[0]
-                corrected_order_Y = notification_sentence.split("Number of Orders was Corrected!")[1].split("Y Orders =")[1].split()[0]
-                
-           # os.remove(output_name+'.dat')
-            
-            return data,corrected_order_X,corrected_order_Y
-            
-       
-        # TODO
-        if scan == "single_parameter":
-            
-            
-            def mc_grating_data_to_dict(data):
-                    """
-                    Generates a python dictionary from mc grating data 
-                    keys=['Order', 'AngleN, deg', 'AngleP, deg', 'Power', 'Power(s)', 'Power(p)']
+ 
+        
+class object_3d_geometry():
     
-                    Parameters
-                    ----------
-                    data : string
-                        extracted data from .dat file.
+    def __init__(self, period_x, period_y):
+        self.period_X = period_x
+        self.period_Y = period_y
+        self.geo = geometry(period_x=period_x, period_y=period_y) 
+        self.objects = []
+
     
-                    Returns
-                    -------
-                    dict_file: dictionary
-                        converted dictionary
+    def cover_material(self, material):
+        self.geo.cover_material(material)
+        
+    # OBJECTS
+    def cylinder(self, position, radius, height, name = "cylinder", material = "Silicon (Table)", order = 0):
+        """
+        Creates a 3D cylinder object
     
-                    """
-                    
-                    # Initialize
-                    lines = [l for l in data.splitlines()]
-                    dict_file={}
-                    keys=['Order', 'AngleN, deg', 'AngleP, deg', 'Power', 'Power(s)', 'Power(p)']
-                    # Assign keys to dictionary 
-                    for col in keys: dict_file[col]=[] 
-                
-                    for i, col in enumerate(lines[1:]):
-                       for e,i in enumerate(re.split(r'\s{2,}', col.strip())):
+        Parameters
+        ----------
+        position : list
+            Position of bottom center of cylinder. 
+            Example: position = [0,0,0].
+        radius : float
+            Radius of cylinder.
+            Example: radius = 49.
+        height : float
+            Height of cylinder 
+            Example: height = 77.
     
-                           if keys[e] == 'Order':
-                               dict_file[keys[e]].append(i)
-                           else:
-                               dict_file[keys[e]].append(float(i))
-                
-                    dict_file['Order'] = dict_file['Order'][:-1]
-                    
-                    return dict_file
+        Returns
+        -------
+        None.
+    
+        """
+        
+        # points where cross-section changes - z Axis
+        points_cross_section_change = [position[2], position[2]+height]
+        
+        # Create cylinder object -> As dictionnary 
+        dict_ = {}
+        dict_["name"] = name
+        dict_["type"] = 'cylinder'
+        dict_["parameters"] = [position, radius, height]
+        dict_["material"] = material
+        dict_["points_cross_section_change"] = points_cross_section_change
+        dict_["order"] = order
+        
+        self.objects.append(dict_)
+        
+
+
+    def cuboid(self, position, length, width, height, name = "cuboid", material = "Silicon (Table)", order = 0):
+        """
+        Creates a 3D cuboid
+        
+        """
+        
+        # points where cross-section changes - z Axis
+        points_cross_section_change = [position[2], position[2]+height]
+        
+        # Create cylinder object -> As dictionnary 
+        dict_ = {}
+        dict_["name"] = name
+        dict_["type"] = 'cuboid'
+        dict_["parameters"] = [position, length, width, height]
+        dict_["material"] = material
+        dict_["points_cross_section_change"] = points_cross_section_change
+        dict_["order"] = order
+        
+        self.objects.append(dict_)
+        
+    
+
+
+    def object_to_layer(self, object_):
+        
+        # Cylinder
+        if object_["type"] == 'cylinder':
+            [position, radius, height] = object_["parameters"]
+            material = object_["material"]
             
-            # Help variable
-            substrate_exists = False
-                
-            # EXTRACT Cover
-            data_cover_substrate = (output.split("Cover diffractive Orders\n")[1]).split("Substrate diffractive Orders\n")
-            data_cover = data_cover_substrate[0]
-            # Convert Data to dict
-            result_cover = mc_grating_data_to_dict(data_cover)
+            self.geo.circle(position[:-1], radius, material)
             
-            #print("COVER")
-            #print(data_cover)
-                
-            if len(data_cover_substrate) > 1 :
-                substrate_exists = True
-                #print("SUBSTRATE")
-                data_substrate = data_cover_substrate[1]
-                # Convert data to dict
-                result_substrate = mc_grating_data_to_dict(data_substrate)
-                #print(data_substrate)
-                
-            
-            # Extract Notification 
-            try:
-                notifications = [elem.strip() for elem in output.split("Balance")[1].split("\n")[1:] if elem  is not ""]
-                #print("\n")
-                #print(notifications)
-            except :
-                notifications = None
-                
-            
-            if notifications is not None:
-                if 'Number of Orders was Corrected!' in notifications:
-                    
-                    self.orders_x = (([elem for elem in notifications if "X Orders" in elem][0]).split("=")[1]).strip()
-                    self.orders_y = (([elem for elem in notifications if "Y Orders" in elem][0]).split("=")[1]).strip()
-                    print("\nNumber of orders was auto-corrected by MC Grating")
-                    print("Orders X: ", self.orders_x, "Orders Y: ", self.orders_y)
-                
-            
-           
+        
+        # Cuboid
+        if object_["type"] == 'cuboid':
+            [position, length, width, height] = object_["parameters"]
+            material = object_["material"]
             
             
+            self.geo.rectangle(position[:-1], length, width, material)
             
-           
+        
+    def string_diff(self, list_of_list_of_strings):
+        # When you have a list of list of strings 
+        # and you wan to create a list of list of strings where only the strings are
+        # inserted that are the same in subsequent lists
+        # Example: temp1 = [['One', 'Two'],['One', 'Two','Three', 'Four']]
+        # Res: [['One', 'Two']]
+        res = []
+        start = list_of_list_of_strings[0]
+        for list_ in list_of_list_of_strings[1:]:
+            s = set(start)
+            temp = [x for x in list_ if x in s]
+            res.append(temp)
+            # update
+            start = list_
+        return res 
             
-            if substrate_exists: 
-                return [result_cover,result_substrate], self.orders_x, self.orders_y, substrate_exists
+        
+    def check_if_cuboid_spans_doamin(self, object_):
+        # first check if imput object is a cuboid ...
+        if object_["type"] == 'cuboid':
+            # Check if the Cuboid spans the entire domain. If it is the case, then
+            # it is better to define it as a layer than a rectangle
+            [position, length, width, height] = object_["parameters"]
+            pos_X, pos_Y, pos_Z = position
+            if pos_X == 0 and pos_Y == 0 and length == self.period_X and width == self.period_Y:
+                return True
             else:
-                #print("A")
-                #print(substrate_exists)
-                return [result_cover], self.orders_x, self.orders_y, substrate_exists
+                return False
+        else:
+            return False
+    
+    def substrate(self, material):
+            self.geometry_to_mc_grating_script()
+            self.geo.substrate(material)
+            
+
+    def geometry_to_mc_grating_script(self):
+        objects = self.objects
+        geometry_objects = {}
+        for obj in objects:
+            geometry_objects[obj["name"]]=obj
+            
+        
+        names_list = []
+        points_cross_section_change_list = []
+        for object_ in objects:
+            for point_ in object_["points_cross_section_change"]:
+                names_list.append(object_["name"])
+                points_cross_section_change_list.append(point_)
+                
+        
+        
+        df = pd.DataFrame([names_list, points_cross_section_change_list], index=['Name', 'Cross-Section-Change']).T
+        df = df.sort_values('Cross-Section-Change')  
+        
+        
+        
+        # Combine all objects that belong to the same layer
+        # Source: https://stackoverflow.com/questions/65740018/pandas-dataframe-regrouping/65740157#65740157
+        df = (df.pivot(index='Cross-Section-Change', columns='Name', values='Name')
+           .apply(lambda x: x[x.notna().cumsum().ne(0)].bfill())
+           .apply(lambda x: list(x.dropna()), axis=1)
+        )
+        
+        # Get layer thicknesses and objects
+        # From top to bottom -> MC Grating Layer Definition
+        layer_thicknesses = np.abs(np.diff(df.index.tolist()[::-1]))
+        
+        objects_at_each_cross_section_change = list(df.values)[::-1]
+        # Get object in each layer -> Keep strings which are the same in subsequent lists
+        objects_in_each_layer = self.string_diff(objects_at_each_cross_section_change)
+        
+        # order objects in each layer according to their order -> important to make holes etc.
+        sorted_objects_in_each_layer = []
+        for objects_in_layer in objects_in_each_layer:
+        
+            orders = [geometry_objects[object_name]["order"] for object_name in objects_in_layer]
+        
+            # sort
+            sorted_objects_in_layer = [x for _,x in sorted(zip(orders,objects_in_layer))][::-1]
+            
+            sorted_objects_in_each_layer.append(sorted_objects_in_layer)
+            
+        
+        # Build MC Grating Script
+        for i,layer_thickness in enumerate(layer_thicknesses):
+            # check if cuboid in span domain
+            check = [self.check_if_cuboid_spans_doamin(geometry_objects[object_name]) for object_name in sorted_objects_in_each_layer[i]]
+            
+            # BACKGROUND MATERIAL (LAYER) 
+            if True in check:
+                name = np.array(sorted_objects_in_each_layer[i])[check]
+                if len(name) > 1:
+                    raise Exception('Perfectly overlapping cuboids found in layer '+ str(i)+". Object names: " + str(name) +"\nPlease fix.")
+                else:
+                    name_of_cuboid_that_spans_domain = name[0]
+                    
+                object_ = geometry_objects[name_of_cuboid_that_spans_domain]
+                [_, _, _, height] = object_["parameters"]
+                material = object_["material"]
+                # LAYER 
+                self.geo.layer(thickness = height, sourrounding_material = material)
+                
+            else:
+                # LAYER 
+                self.geo.layer(thickness = layer_thickness, sourrounding_material = "Air (Special Formula)")
+                
+            # ADD "PILLARS" to LAYER
+            for object_name in sorted_objects_in_each_layer[i]:
+                # if object does not span the domain 
+                if object_name != name_of_cuboid_that_spans_domain:
+                    self.object_to_layer(geometry_objects[object_name])
+                
+        
+                
+  
