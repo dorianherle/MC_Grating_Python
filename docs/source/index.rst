@@ -13,7 +13,7 @@ Download the `mc_grating_class <https://github.com/dorianherle/MC_Grating_Python
 
 
 ***********
-First Simulation
+First Simulation using 2D Geometry
 ***********
 This tutorial will teach you how to run your first MC Grating simulation through python. It will include defining your geometry, setting up the scan, and retreiveing as well as visualizing the result.
 
@@ -87,7 +87,30 @@ Finnaly, let's run the simulation and visualize the result
 .. image:: _static/reflection_spectra_nanostructure.*
    :align: center
    
+***********
+First Simulation using 3D Geometry (NEW)
+***********
+
+As of April 2021 it is now possible to define the geometry in an even easier way using 3D objects.
+Let's see how the previous geometry can be defined much easier with this new capability:
+
+Create the geometry (and define materials used):
+
+.. code-block:: python
+
+   # geometry 
+   mc_obj = mc.object_3d_geometry(period_x=period, period_y=period)
    
+   # cover layer
+   mc_obj.cover_material("Air (Special Formula)")
+
+   # CYLINDER
+   mc_obj.cylinder(position=[0,0,0], radius=50, height=100, name = "cylinder_si", material = "Silicon (Table)")
+   
+   # substrate
+   mc_obj.substrate("Fused Silica (Sellmeier)")
+
+ 
 .. toctree::
    :maxdepth: 3
    
