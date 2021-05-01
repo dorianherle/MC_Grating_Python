@@ -641,7 +641,8 @@ class object_3d_geometry():
             sorted_objects_in_layer = [x for _,x in sorted(zip(orders,objects_in_layer))][::-1]
             
             sorted_objects_in_each_layer.append(sorted_objects_in_layer)
-            
+        
+        
         
         # Build MC Grating Script
         for i,layer_thickness in enumerate(layer_thicknesses):
@@ -662,16 +663,21 @@ class object_3d_geometry():
                 # LAYER 
                 self.geo.layer(thickness = height, sourrounding_material = material)
                 
+                # ADD "PILLARS" to LAYER
+                for object_name in sorted_objects_in_each_layer[i]:
+                    # if object does not span the domain 
+                    if object_name != name_of_cuboid_that_spans_domain:
+                        self.object_to_layer(geometry_objects[object_name])
+                    
+                
             else:
                 # LAYER 
                 self.geo.layer(thickness = layer_thickness, sourrounding_material = "Air (Special Formula)")
                 
-            # ADD "PILLARS" to LAYER
-            for object_name in sorted_objects_in_each_layer[i]:
-                # if object does not span the domain 
-                if object_name != name_of_cuboid_that_spans_domain:
+                # ADD "PILLARS" to LAYER
+                for object_name in sorted_objects_in_each_layer[i]:
                     self.object_to_layer(geometry_objects[object_name])
-                
+                    
         
                 
   
