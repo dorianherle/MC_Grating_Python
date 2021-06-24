@@ -1,0 +1,3851 @@
+{
+  "generator": "Modal Crossed (x64)",
+  "version": 1,
+  "OutputType": "P",
+  "GeomType": 0,
+  "ScanType": 1,
+  "ScanPar": {
+    "Name": "WaveL",
+    "IniValue": 400,
+    "FinValue": 700,
+    "NPoints": 101
+  },
+  "400": {
+    "SubRegime": true,
+    "Balance": 0.826680957003034,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00723465172167824
+      ],
+      "Power (p)": [
+        2.54672331046957E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.819446296810759
+      ],
+      "Power (p)": [
+        5.92387385217414E-9
+      ]
+    }
+  },
+  "403": {
+    "SubRegime": true,
+    "Balance": 0.830558118927069,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00667002563444987
+      ],
+      "Power (p)": [
+        8.20328022441684E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.823888084744367
+      ],
+      "Power (p)": [
+        7.72792402609549E-9
+      ]
+    }
+  },
+  "406": {
+    "SubRegime": true,
+    "Balance": 0.822667659666569,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00808006091665992
+      ],
+      "Power (p)": [
+        1.53711344369093E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.81458759119444
+      ],
+      "Power (p)": [
+        7.40175749623304E-9
+      ]
+    }
+  },
+  "409": {
+    "SubRegime": true,
+    "Balance": 0.799681138012491,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0129457538574363
+      ],
+      "Power (p)": [
+        6.77107419979208E-11
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.786735378002532
+      ],
+      "Power (p)": [
+        6.08481164726388E-9
+      ]
+    }
+  },
+  "412": {
+    "SubRegime": true,
+    "Balance": 0.758669648621206,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0232998123911419
+      ],
+      "Power (p)": [
+        5.88294483026771E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.7353698306878
+      ],
+      "Power (p)": [
+        4.95396956390452E-9
+      ]
+    }
+  },
+  "415": {
+    "SubRegime": true,
+    "Balance": 0.697902364415578,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0420586946591787
+      ],
+      "Power (p)": [
+        1.62353070302676E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.65584366373197
+      ],
+      "Power (p)": [
+        4.40089853677821E-9
+      ]
+    }
+  },
+  "418": {
+    "SubRegime": true,
+    "Balance": 0.621735293865283,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0724020865983181
+      ],
+      "Power (p)": [
+        3.2261117987106E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.549333200159547
+      ],
+      "Power (p)": [
+        3.88130593382333E-9
+      ]
+    }
+  },
+  "421": {
+    "SubRegime": true,
+    "Balance": 0.547236218774528,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.115696140129722
+      ],
+      "Power (p)": [
+        5.31111565574543E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.4315400702481
+      ],
+      "Power (p)": [
+        3.08558971489372E-9
+      ]
+    }
+  },
+  "424": {
+    "SubRegime": true,
+    "Balance": 0.50582815180907,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.168495644484238
+      ],
+      "Power (p)": [
+        7.4902705721753E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.337332497822128
+      ],
+      "Power (p)": [
+        2.01243334697794E-9
+      ]
+    }
+  },
+  "427": {
+    "SubRegime": true,
+    "Balance": 0.530850714092404,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.217128043193456
+      ],
+      "Power (p)": [
+        9.17489834292492E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.313722660731567
+      ],
+      "Power (p)": [
+        9.92481929081089E-10
+      ]
+    }
+  },
+  "430": {
+    "SubRegime": true,
+    "Balance": 0.615452308131832,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.236317199977953
+      ],
+      "Power (p)": [
+        8.42321419199265E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.379135098949163
+      ],
+      "Power (p)": [
+        7.81501405848049E-10
+      ]
+    }
+  },
+  "433": {
+    "SubRegime": true,
+    "Balance": 0.710975926867278,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.230036393631586
+      ],
+      "Power (p)": [
+        6.08621053307617E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.48093952575308
+      ],
+      "Power (p)": [
+        1.39640175049966E-9
+      ]
+    }
+  },
+  "436": {
+    "SubRegime": true,
+    "Balance": 0.787523101664286,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.21381531926955
+      ],
+      "Power (p)": [
+        5.02251545576312E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.573707775233675
+      ],
+      "Power (p)": [
+        2.13854580969697E-9
+      ]
+    }
+  },
+  "439": {
+    "SubRegime": true,
+    "Balance": 0.841173644968147,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.197449486488562
+      ],
+      "Power (p)": [
+        5.14567618522677E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.643724150578862
+      ],
+      "Power (p)": [
+        2.75504641102579E-9
+      ]
+    }
+  },
+  "442": {
+    "SubRegime": true,
+    "Balance": 0.877191813423212,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.184496951681767
+      ],
+      "Power (p)": [
+        5.78511125352511E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.692694852676766
+      ],
+      "Power (p)": [
+        3.27956847610381E-9
+      ]
+    }
+  },
+  "445": {
+    "SubRegime": true,
+    "Balance": 0.901197882851668,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.175704139275064
+      ],
+      "Power (p)": [
+        6.63230469536657E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.725493733155922
+      ],
+      "Power (p)": [
+        3.78837759147665E-9
+      ]
+    }
+  },
+  "448": {
+    "SubRegime": true,
+    "Balance": 0.917203600058719,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.17100591357992
+      ],
+      "Power (p)": [
+        7.60404644801512E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.746197674524038
+      ],
+      "Power (p)": [
+        4.35071437204334E-9
+      ]
+    }
+  },
+  "451": {
+    "SubRegime": true,
+    "Balance": 0.927753819919992,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.17031673600906
+      ],
+      "Power (p)": [
+        8.7096588464947E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.757437070167395
+      ],
+      "Power (p)": [
+        5.03387851013052E-9
+      ]
+    }
+  },
+  "454": {
+    "SubRegime": true,
+    "Balance": 0.934541039193338,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.173655228243735
+      ],
+      "Power (p)": [
+        9.96734147154667E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.760885795085974
+      ],
+      "Power (p)": [
+        5.89628829710915E-9
+      ]
+    }
+  },
+  "457": {
+    "SubRegime": true,
+    "Balance": 0.938748095503606,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.181140986003818
+      ],
+      "Power (p)": [
+        1.14239904919373E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.757607091059469
+      ],
+      "Power (p)": [
+        7.01632790302338E-9
+      ]
+    }
+  },
+  "460": {
+    "SubRegime": true,
+    "Balance": 0.941082388462887,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.193245882499037
+      ],
+      "Power (p)": [
+        1.31518388447916E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.747836484298459
+      ],
+      "Power (p)": [
+        8.51355235708572E-9
+      ]
+    }
+  },
+  "463": {
+    "SubRegime": true,
+    "Balance": 0.94194330400587,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.210903087990375
+      ],
+      "Power (p)": [
+        1.52485889785077E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.731040190190838
+      ],
+      "Power (p)": [
+        1.0576068358026E-8
+      ]
+    }
+  },
+  "466": {
+    "SubRegime": true,
+    "Balance": 0.941520909364274,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.235676255454141
+      ],
+      "Power (p)": [
+        1.78554946428832E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.705844622536968
+      ],
+      "Power (p)": [
+        1.351767064017E-8
+      ]
+    }
+  },
+  "469": {
+    "SubRegime": true,
+    "Balance": 0.939847637111083,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.270048070639587
+      ],
+      "Power (p)": [
+        2.11985803697019E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.669799527381122
+      ],
+      "Power (p)": [
+        1.78917938504592E-8
+      ]
+    }
+  },
+  "472": {
+    "SubRegime": true,
+    "Balance": 0.93682782815665,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.317870574796678
+      ],
+      "Power (p)": [
+        2.57011799564887E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.618957202922513
+      ],
+      "Power (p)": [
+        2.47362786762732E-8
+      ]
+    }
+  },
+  "475": {
+    "SubRegime": true,
+    "Balance": 0.932279438778746,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.384941921376209
+      ],
+      "Power (p)": [
+        3.2358036939672E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.547337448899136
+      ],
+      "Power (p)": [
+        3.61453639823031E-8
+      ]
+    }
+  },
+  "478": {
+    "SubRegime": true,
+    "Balance": 0.924375407467165,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.477022401696255
+      ],
+      "Power (p)": [
+        4.41087360727861E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.447352905235675
+      ],
+      "Power (p)": [
+        5.6426498898905E-8
+      ]
+    }
+  },
+  "481": {
+    "SubRegime": true,
+    "Balance": 0.910145389645853,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.595542420214516
+      ],
+      "Power (p)": [
+        7.18375756425743E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.314602801771187
+      ],
+      "Power (p)": [
+        9.58225743906239E-8
+      ]
+    }
+  },
+  "484": {
+    "SubRegime": true,
+    "Balance": 0.888767007369002,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.728359894180149
+      ],
+      "Power (p)": [
+        1.63377210351721E-7
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.160406761315758
+      ],
+      "Power (p)": [
+        1.88495884369285E-7
+      ]
+    }
+  },
+  "487": {
+    "SubRegime": true,
+    "Balance": 0.864345112460303,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.830250011914467
+      ],
+      "Power (p)": [
+        6.07115465628287E-7
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0340939580763324
+      ],
+      "Power (p)": [
+        5.3535403754061E-7
+      ]
+    }
+  },
+  "490": {
+    "SubRegime": true,
+    "Balance": 0.846492976648034,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.830693661478268
+      ],
+      "Power (p)": [
+        6.6341164450351E-6
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0157877139128693
+      ],
+      "Power (p)": [
+        4.96714045159848E-6
+      ]
+    }
+  },
+  "493": {
+    "SubRegime": true,
+    "Balance": 0.853035242102896,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.717382312966841
+      ],
+      "Power (p)": [
+        3.18204409946424E-6
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.135647428762029
+      ],
+      "Power (p)": [
+        2.31832992625048E-6
+      ]
+    }
+  },
+  "496": {
+    "SubRegime": true,
+    "Balance": 0.875040658345288,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.55298276017898
+      ],
+      "Power (p)": [
+        6.01413172574956E-7
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.322056880013738
+      ],
+      "Power (p)": [
+        4.16739397447107E-7
+      ]
+    }
+  },
+  "499": {
+    "SubRegime": true,
+    "Balance": 0.901603144338653,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.402119503380916
+      ],
+      "Power (p)": [
+        2.47201895945088E-7
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.499483241664813
+      ],
+      "Power (p)": [
+        1.52091029001286E-7
+      ]
+    }
+  },
+  "502": {
+    "SubRegime": true,
+    "Balance": 0.926067527692518,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.288233731218228
+      ],
+      "Power (p)": [
+        1.35066465811818E-7
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.637833589448614
+      ],
+      "Power (p)": [
+        7.19592095380792E-8
+      ]
+    }
+  },
+  "505": {
+    "SubRegime": true,
+    "Balance": 0.944091494009539,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.208446140450263
+      ],
+      "Power (p)": [
+        8.50133063366287E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.735645228822649
+      ],
+      "Power (p)": [
+        3.9723320979086E-8
+      ]
+    }
+  },
+  "508": {
+    "SubRegime": true,
+    "Balance": 0.956912753568476,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.153606250489411
+      ],
+      "Power (p)": [
+        5.81007788703203E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.803306420543041
+      ],
+      "Power (p)": [
+        2.44352445793298E-8
+      ]
+    }
+  },
+  "511": {
+    "SubRegime": true,
+    "Balance": 0.966077727618077,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.115637534108631
+      ],
+      "Power (p)": [
+        4.1943450419633E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.850440135274639
+      ],
+      "Power (p)": [
+        1.6291356580396E-8
+      ]
+    }
+  },
+  "514": {
+    "SubRegime": true,
+    "Balance": 0.972736260887,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0888852290877921
+      ],
+      "Power (p)": [
+        3.15120173197318E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.883850988740043
+      ],
+      "Power (p)": [
+        1.15471477867527E-8
+      ]
+    }
+  },
+  "517": {
+    "SubRegime": true,
+    "Balance": 0.977670899369371,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0696455725763917
+      ],
+      "Power (p)": [
+        2.44146325188894E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.908025293798822
+      ],
+      "Power (p)": [
+        8.57952502364518E-9
+      ]
+    }
+  },
+  "520": {
+    "SubRegime": true,
+    "Balance": 0.981402517497838,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0555240706338159
+      ],
+      "Power (p)": [
+        1.93867843205546E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.925878420863795
+      ],
+      "Power (p)": [
+        6.61344299916876E-9
+      ]
+    }
+  },
+  "523": {
+    "SubRegime": true,
+    "Balance": 0.984278890569845,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0449604076629952
+      ],
+      "Power (p)": [
+        1.57076730276247E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.939318461950703
+      ],
+      "Power (p)": [
+        5.24847392541337E-9
+      ]
+    }
+  },
+  "526": {
+    "SubRegime": true,
+    "Balance": 0.986535352985199,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0369211772405449
+      ],
+      "Power (p)": [
+        1.29423898266558E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.949614158538615
+      ],
+      "Power (p)": [
+        4.26364990648712E-9
+      ]
+    }
+  },
+  "529": {
+    "SubRegime": true,
+    "Balance": 0.988333941156301,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.03070867402793
+      ],
+      "Power (p)": [
+        1.08164329167051E-8
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.957625252781904
+      ],
+      "Power (p)": [
+        3.53003413400217E-9
+      ]
+    }
+  },
+  "532": {
+    "SubRegime": true,
+    "Balance": 0.989788299624134,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0258424640093232
+      ],
+      "Power (p)": [
+        9.15001752975127E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.963945823496078
+      ],
+      "Power (p)": [
+        2.96871539226712E-9
+      ]
+    }
+  },
+  "535": {
+    "SubRegime": true,
+    "Balance": 0.990979595802709,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0219853438501452
+      ],
+      "Power (p)": [
+        7.82166855969661E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.968994241601518
+      ],
+      "Power (p)": [
+        2.52937690528402E-9
+      ]
+    }
+  },
+  "538": {
+    "SubRegime": true,
+    "Balance": 0.991966814303961,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0188963371538069
+      ],
+      "Power (p)": [
+        6.74708561052302E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.973070468224293
+      ],
+      "Power (p)": [
+        2.1787763143006E-9
+      ]
+    }
+  },
+  "541": {
+    "SubRegime": true,
+    "Balance": 0.992793520414436,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0164003235676791
+      ],
+      "Power (p)": [
+        5.86639061271754E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.976393189086102
+      ],
+      "Power (p)": [
+        1.89426403253459E-9
+      ]
+    }
+  },
+  "544": {
+    "SubRegime": true,
+    "Balance": 0.993492378959224,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0143680545633351
+      ],
+      "Power (p)": [
+        5.13617374770028E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.979124317599729
+      ],
+      "Power (p)": [
+        1.65998630519871E-9
+      ]
+    }
+  },
+  "547": {
+    "SubRegime": true,
+    "Balance": 0.994088224774502,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0127027664235663
+      ],
+      "Power (p)": [
+        4.52438817021298E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.981385452361967
+      ],
+      "Power (p)": [
+        1.4645804829935E-9
+      ]
+    }
+  },
+  "550": {
+    "SubRegime": true,
+    "Balance": 0.994600183458257,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0113310574928319
+      ],
+      "Power (p)": [
+        4.00698923673809E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.983269120658705
+      ],
+      "Power (p)": [
+        1.29973101248264E-9
+      ]
+    }
+  },
+  "553": {
+    "SubRegime": true,
+    "Balance": 0.995040038406626,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0102021482798099
+      ],
+      "Power (p)": [
+        3.56804669656956E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.984837885398596
+      ],
+      "Power (p)": [
+        1.16017350501025E-9
+      ]
+    }
+  },
+  "556": {
+    "SubRegime": true,
+    "Balance": 0.995417994174467,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00927460158159507
+      ],
+      "Power (p)": [
+        3.19470369617316E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.986143388356434
+      ],
+      "Power (p)": [
+        1.04173458028579E-9
+      ]
+    }
+  },
+  "559": {
+    "SubRegime": true,
+    "Balance": 0.995745273833258,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00851041283363272
+      ],
+      "Power (p)": [
+        2.87466562590286E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.987234857184629
+      ],
+      "Power (p)": [
+        9.40331281432067E-10
+      ]
+    }
+  },
+  "562": {
+    "SubRegime": true,
+    "Balance": 0.996030757428458,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00787990749415204
+      ],
+      "Power (p)": [
+        2.59835058384573E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.988150846483136
+      ],
+      "Power (p)": [
+        8.52819424401843E-10
+      ]
+    }
+  },
+  "565": {
+    "SubRegime": true,
+    "Balance": 0.996281540712358,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00735968520850747
+      ],
+      "Power (p)": [
+        2.35820734989395E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.988921852368897
+      ],
+      "Power (p)": [
+        7.76745408254505E-10
+      ]
+    }
+  },
+  "568": {
+    "SubRegime": true,
+    "Balance": 0.996503345599116,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00693112380508397
+      ],
+      "Power (p)": [
+        2.14822423325649E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.989572218935637
+      ],
+      "Power (p)": [
+        7.10171493987367E-10
+      ]
+    }
+  },
+  "571": {
+    "SubRegime": true,
+    "Balance": 0.996700825301159,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00657927746597604
+      ],
+      "Power (p)": [
+        1.96357035439582E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990121545220062
+      ],
+      "Power (p)": [
+        6.51550677350674E-10
+      ]
+    }
+  },
+  "574": {
+    "SubRegime": true,
+    "Balance": 0.996877793699631,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00629205605051625
+      ],
+      "Power (p)": [
+        1.80033023928479E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990585735249148
+      ],
+      "Power (p)": [
+        5.99635679970803E-10
+      ]
+    }
+  },
+  "577": {
+    "SubRegime": true,
+    "Balance": 0.997037399554897,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00605960739618671
+      ],
+      "Power (p)": [
+        1.65530513647E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990977789949993
+      ],
+      "Power (p)": [
+        5.53411823053881E-10
+      ]
+    }
+  },
+  "580": {
+    "SubRegime": true,
+    "Balance": 0.997182260108699,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00587384782467533
+      ],
+      "Power (p)": [
+        1.52586259003181E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991308410246114
+      ],
+      "Power (p)": [
+        5.12046847486199E-10
+      ]
+    }
+  },
+  "583": {
+    "SubRegime": true,
+    "Balance": 0.997314564476889,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00572810201253111
+      ],
+      "Power (p)": [
+        1.40982145410784E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991586460579684
+      ],
+      "Power (p)": [
+        4.74852997113042E-10
+      ]
+    }
+  },
+  "586": {
+    "SubRegime": true,
+    "Balance": 0.997436154348289,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.005616824369857
+      ],
+      "Power (p)": [
+        1.30536307054908E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991819328231811
+      ],
+      "Power (p)": [
+        4.41257994319763E-10
+      ]
+    }
+  },
+  "589": {
+    "SubRegime": true,
+    "Balance": 0.997548587478253,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00553538173490806
+      ],
+      "Power (p)": [
+        1.21096213517061E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.9920132041216
+      ],
+      "Power (p)": [
+        4.10782650632404E-10
+      ]
+    }
+  },
+  "592": {
+    "SubRegime": true,
+    "Balance": 0.997653188025909,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00547988260074526
+      ],
+      "Power (p)": [
+        1.12533237527901E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992173303916808
+      ],
+      "Power (p)": [
+        3.83023394068478E-10
+      ]
+    }
+  },
+  "595": {
+    "SubRegime": true,
+    "Balance": 0.997751086749382,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00544704194752488
+      ],
+      "Power (p)": [
+        1.04738357914827E-9
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992304043396835
+      ],
+      "Power (p)": [
+        3.57638540122755E-10
+      ]
+    }
+  },
+  "598": {
+    "SubRegime": true,
+    "Balance": 0.997843253323794,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00543407353285501
+      ],
+      "Power (p)": [
+        9.76187329213835E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992409178480414
+      ],
+      "Power (p)": [
+        3.34337397809364E-10
+      ]
+    }
+  },
+  "601": {
+    "SubRegime": true,
+    "Balance": 0.997930458959844,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00543863704109788
+      ],
+      "Power (p)": [
+        9.1098611290968E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992491820694872
+      ],
+      "Power (p)": [
+        3.12888282054566E-10
+      ]
+    }
+  },
+  "604": {
+    "SubRegime": true,
+    "Balance": 0.998012559099216,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00545905605855076
+      ],
+      "Power (p)": [
+        8.51548028679456E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992553501895832
+      ],
+      "Power (p)": [
+        2.932856183986E-10
+      ]
+    }
+  },
+  "607": {
+    "SubRegime": true,
+    "Balance": 0.998089809748833,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00549348498415927
+      ],
+      "Power (p)": [
+        7.97356292023748E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992596323691933
+      ],
+      "Power (p)": [
+        2.75384261527107E-10
+      ]
+    }
+  },
+  "610": {
+    "SubRegime": true,
+    "Balance": 0.998162647297551,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00554019994698121
+      ],
+      "Power (p)": [
+        7.47830740187534E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992622446343741
+      ],
+      "Power (p)": [
+        2.58998203535048E-10
+      ]
+    }
+  },
+  "613": {
+    "SubRegime": true,
+    "Balance": 0.998231454293373,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00559771096727496
+      ],
+      "Power (p)": [
+        7.02467250715166E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992633742379666
+      ],
+      "Power (p)": [
+        2.4396556728734E-10
+      ]
+    }
+  },
+  "616": {
+    "SubRegime": true,
+    "Balance": 0.998296567096173,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00566472578806467
+      ],
+      "Power (p)": [
+        6.60826245379747E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992631840417137
+      ],
+      "Power (p)": [
+        2.30144972067783E-10
+      ]
+    }
+  },
+  "619": {
+    "SubRegime": true,
+    "Balance": 0.998358282296016,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.005740119968934
+      ],
+      "Power (p)": [
+        6.22523143184141E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992618161487146
+      ],
+      "Power (p)": [
+        2.17412508257402E-10
+      ]
+    }
+  },
+  "622": {
+    "SubRegime": true,
+    "Balance": 0.998416862119673,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00582291204867818
+      ],
+      "Power (p)": [
+        5.87220415613469E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992593949278115
+      ],
+      "Power (p)": [
+        2.05659229546905E-10
+      ]
+    }
+  },
+  "625": {
+    "SubRegime": true,
+    "Balance": 0.998472539003562,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00591224283048828
+      ],
+      "Power (p)": [
+        5.54620943038574E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992560295423663
+      ],
+      "Power (p)": [
+        1.94789054808397E-10
+      ]
+    }
+  },
+  "628": {
+    "SubRegime": true,
+    "Balance": 0.998525519477055,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00600735803567461
+      ],
+      "Power (p)": [
+        5.24462420529457E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992518160732201
+      ],
+      "Power (p)": [
+        1.84716998163146E-10
+      ]
+    }
+  },
+  "631": {
+    "SubRegime": true,
+    "Balance": 0.998575987472496,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00610759372187021
+      ],
+      "Power (p)": [
+        4.96512648323163E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992468393078746
+      ],
+      "Power (p)": [
+        1.75367682999236E-10
+      ]
+    }
+  },
+  "634": {
+    "SubRegime": true,
+    "Balance": 0.99862410715677,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00621236397964155
+      ],
+      "Power (p)": [
+        4.70565538477209E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992411742539889
+      ],
+      "Power (p)": [
+        1.66674078072341E-10
+      ]
+    }
+  },
+  "637": {
+    "SubRegime": true,
+    "Balance": 0.998670025361888,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0063211505144609
+      ],
+      "Power (p)": [
+        4.46437724963651E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992348874242413
+      ],
+      "Power (p)": [
+        1.58576427218456E-10
+      ]
+    }
+  },
+  "640": {
+    "SubRegime": true,
+    "Balance": 0.998713873678273,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00643349379489638
+      ],
+      "Power (p)": [
+        4.23965670187759E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.99228037930839
+      ],
+      "Power (p)": [
+        1.51021333411336E-10
+      ]
+    }
+  },
+  "643": {
+    "SubRegime": true,
+    "Balance": 0.998755770263154,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00654898550675881
+      ],
+      "Power (p)": [
+        4.03003186973119E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992206784209431
+      ],
+      "Power (p)": [
+        1.4396097271131E-10
+      ]
+    }
+  },
+  "646": {
+    "SubRegime": true,
+    "Balance": 0.998795821407544,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0066672621000845
+      ],
+      "Power (p)": [
+        3.83419311683062E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992128558786687
+      ],
+      "Power (p)": [
+        1.37352419600253E-10
+      ]
+    }
+  },
+  "649": {
+    "SubRegime": true,
+    "Balance": 0.998834122897924,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00678799925379506
+      ],
+      "Power (p)": [
+        3.65096480570164E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.992046123147876
+      ],
+      "Power (p)": [
+        1.31157071297438E-10
+      ]
+    }
+  },
+  "652": {
+    "SubRegime": true,
+    "Balance": 0.998870761202722,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0069109071135228
+      ],
+      "Power (p)": [
+        3.47928941981699E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.99195985361593
+      ],
+      "Power (p)": [
+        1.25340139970794E-10
+      ]
+    }
+  },
+  "655": {
+    "SubRegime": true,
+    "Balance": 0.99890581450884,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00703572618291229
+      ],
+      "Power (p)": [
+        3.31821389342599E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991870087874236
+      ],
+      "Power (p)": [
+        1.19870218763302E-10
+      ]
+    }
+  },
+  "658": {
+    "SubRegime": true,
+    "Balance": 0.998939353629392,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0071622237690139
+      ],
+      "Power (p)": [
+        3.16687772774981E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991777129428971
+      ],
+      "Power (p)": [
+        1.14718904156322E-10
+      ]
+    }
+  },
+  "661": {
+    "SubRegime": true,
+    "Balance": 0.998971442800514,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00729019089882702
+      ],
+      "Power (p)": [
+        3.0245026331105E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991681251489377
+      ],
+      "Power (p)": [
+        1.09860464904699E-10
+      ]
+    }
+  },
+  "664": {
+    "SubRegime": true,
+    "Balance": 0.999002140382397,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00741943963772118
+      ],
+      "Power (p)": [
+        2.89038349829408E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991582700350366
+      ],
+      "Power (p)": [
+        1.05271554272917E-10
+      ]
+    }
+  },
+  "667": {
+    "SubRegime": true,
+    "Balance": 0.999031499477249,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00754980075153883
+      ],
+      "Power (p)": [
+        2.76388045367113E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991481698348391
+      ],
+      "Power (p)": [
+        1.00930955065545E-10
+      ]
+    }
+  },
+  "670": {
+    "SubRegime": true,
+    "Balance": 0.999059568475188,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00768112166346334
+      ],
+      "Power (p)": [
+        2.64441198282569E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991378446450464
+      ],
+      "Power (p)": [
+        9.68193614222726E-11
+      ]
+    }
+  },
+  "673": {
+    "SubRegime": true,
+    "Balance": 0.999086391537345,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00781326466436892
+      ],
+      "Power (p)": [
+        2.53144877923733E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991273126526912
+      ],
+      "Power (p)": [
+        9.2919179665948E-11
+      ]
+    }
+  },
+  "676": {
+    "SubRegime": true,
+    "Balance": 0.999112009024077,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00794610534164497
+      ],
+      "Power (p)": [
+        2.424508414362E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991165903350767
+      ],
+      "Power (p)": [
+        8.92143593261222E-11
+      ]
+    }
+  },
+  "679": {
+    "SubRegime": true,
+    "Balance": 0.999136457875147,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00807953119692045
+      ],
+      "Power (p)": [
+        2.32315055862774E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.991056926360221
+      ],
+      "Power (p)": [
+        8.56902376336087E-11
+      ]
+    }
+  },
+  "682": {
+    "SubRegime": true,
+    "Balance": 0.999159771947791,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00821344042738385
+      ],
+      "Power (p)": [
+        2.22697282126443E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990946331215376
+      ],
+      "Power (p)": [
+        8.23334077869364E-11
+      ]
+    }
+  },
+  "685": {
+    "SubRegime": true,
+    "Balance": 0.999181982317672,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00834774084922293
+      ],
+      "Power (p)": [
+        2.13560700651057E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990834241175756
+      ],
+      "Power (p)": [
+        7.91315969726062E-11
+      ]
+    }
+  },
+  "688": {
+    "SubRegime": true,
+    "Balance": 0.999203117547102,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.0084823489447526
+      ],
+      "Power (p)": [
+        2.04871584270379E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990720768321404
+      ],
+      "Power (p)": [
+        7.60735626908492E-11
+      ]
+    }
+  },
+  "691": {
+    "SubRegime": true,
+    "Balance": 0.99922320392435,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00861718901748623
+      ],
+      "Power (p)": [
+        1.96599002640745E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990606014637115
+      ],
+      "Power (p)": [
+        7.31489964405773E-11
+      ]
+    }
+  },
+  "694": {
+    "SubRegime": true,
+    "Balance": 0.999242265677325,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00875219244157612
+      ],
+      "Power (p)": [
+        1.88714560706723E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990490072976686
+      ],
+      "Power (p)": [
+        7.03484394608843E-11
+      ]
+    }
+  },
+  "697": {
+    "SubRegime": true,
+    "Balance": 0.999260325164498,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00888729699395367
+      ],
+      "Power (p)": [
+        1.81192166597772E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990373027921689
+      ],
+      "Power (p)": [
+        6.76632089819696E-11
+      ]
+    }
+  },
+  "700": {
+    "SubRegime": true,
+    "Balance": 0.999277403045497,
+    "Cover orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.00902244625913634
+      ],
+      "Power (p)": [
+        1.74007820688745E-10
+      ]
+    },
+    "Substrate orders": {
+      "Orders": [
+        "0,0"
+      ],
+      "AngleN, deg": [
+        0
+      ],
+      "AngleP, deg": [
+        0
+      ],
+      "Power (s)": [
+        0.990254956547267
+      ],
+      "Power (p)": [
+        6.5085328459183E-11
+      ]
+    }
+  }
+}

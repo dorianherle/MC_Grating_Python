@@ -658,10 +658,10 @@ class object_3d_geometry():
                     name_of_cuboid_that_spans_domain = name[0]
                     
                 object_ = geometry_objects[name_of_cuboid_that_spans_domain]
-                [_, _, _, height] = object_["parameters"]
-                material = object_["material"]
+                material = object_["material"] 
+                
                 # LAYER 
-                self.geo.layer(thickness = height, sourrounding_material = material)
+                self.geo.layer(thickness = layer_thickness, sourrounding_material = material)
                 
                 # ADD "PILLARS" to LAYER
                 for object_name in sorted_objects_in_each_layer[i]:
